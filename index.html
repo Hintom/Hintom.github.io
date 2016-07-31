@@ -50,7 +50,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Søk"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -86,24 +86,16 @@
         <p>废了半天劲终于搞定了，下面是一些攻略</p>
 <h3 id="基本步骤"><a href="#基本步骤" class="headerlink" title="基本步骤"></a>基本步骤</h3><p>安装 github,nodejs,hexo,按照<a href="http://www.jianshu.com/p/985d07d88ef4" target="_blank" rel="external">这篇博客</a>来</p>
 <h3 id="一些问题"><a href="#一些问题" class="headerlink" title="一些问题"></a>一些问题</h3><p>安装过程中我遇到一些问题，<br>一：首先安装 github windows desktop 结果下载到百分之三十几停住了 解决方案：下载离线包。</p>
-<p>二：用 github–powershell时识别不了 npm 命令 在里面设置下环境变量就ok：<br><code>bash
-$Env:Path = $Env:Path +&quot;&lt;npm的路径&gt;&quot;</code>bash<br>然后装hexo，再添加hexo的路径。但是重启后用hexo提示找不到node，google发现是环境变量的问题，用<br><code>bash
-$env:path -split &#39;;&#39; | SelectString-nodejs</code>bash<br>查找nodejs的路径，原来把一个;打成了：，此时要修改环境变量怎么办，解决方法，先把path导出<br><code>bash
-$env:path&lt;&lt;a.out</code>bash<br>然后修改a.out再复制出来。</p>
-<h3 id="hexo的一些命令"><a href="#hexo的一些命令" class="headerlink" title="hexo的一些命令"></a>hexo的一些命令</h3><p>1.新建文章<br><code>bash
-hexo new &quot;text&quot; 新建文章</code>bash</p>
-<p>2.生成<br><code>bash
-hexo generate</code>bash</p>
-<p>3.部署到git<br><code>bash
-hexo deploy</code>bash</p>
+<p>二：用 github–powershell时识别不了 npm 命令 在里面设置下环境变量就ok：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$Env</span>:Path = <span class="variable">$Env</span>:Path +<span class="string">"&lt;npm的路径&gt;"</span></div></pre></td></tr></table></figure></p>
+<p>然后装hexo，再添加hexo的路径。但是重启后用hexo提示找不到node，google发现是环境变量的问题，用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$env</span>:path -split <span class="string">';'</span> | SelectString-nodejs</div><div class="line">```bash</div><div class="line">查找nodejs的路径，原来把一个;打成了：，此时要修改环境变量怎么办，解决方法，先把path导出</div><div class="line">```bash</div><div class="line"><span class="variable">$env</span>:path&lt;&lt;a.out</div><div class="line">```bash</div><div class="line">然后修改a.out再复制出来。</div><div class="line"></div><div class="line"><span class="comment">### hexo的一些命令</span></div><div class="line"></div><div class="line">1.新建文章</div><div class="line">```bash</div><div class="line">hexo new <span class="string">"text"</span> 新建文章</div><div class="line">```bash</div><div class="line"></div><div class="line">2.生成</div><div class="line">```bash</div><div class="line">hexo generate</div><div class="line">```bash</div><div class="line"></div><div class="line">3.部署到git</div><div class="line">```bash</div><div class="line">hexo deploy</div></pre></td></tr></table></figure></p>
 <p>合并起来简写就是<br><code>bash
-hexo d -g</code>bash</p>
-<h3 id="hexo的编辑"><a href="#hexo的编辑" class="headerlink" title="hexo的编辑"></a>hexo的编辑</h3><p><a href="url">text</a>  点击tetx可以链接到url<br>“##”  二级标题<br>“###” 三级标题</p>
+hexo d -g</code>b</p>
+<h3 id="hexo的编辑"><a href="#hexo的编辑" class="headerlink" title="hexo的编辑"></a>hexo的编辑</h3><p>“<a href="url">text</a>“  点击text可以链接到url<br>“##”  二级标题<br>“###” 三级标题</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/31/hi-guys/" data-id="cira05lgc0000ac2rm1cz9f0i" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/07/31/hi-guys/" data-id="cira05lgc0000ac2rm1cz9f0i" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -128,7 +120,7 @@ hexo d -g</code>bash</p>
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Arkiv</h3>
+    <h3 class="widget-title">Archieven</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a></li></ul>
     </div>
@@ -138,7 +130,7 @@ hexo d -g</code>bash</p>
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Siste innlegg</h3>
+    <h3 class="widget-title">Recente berichten</h3>
     <div class="widget">
       <ul>
         
