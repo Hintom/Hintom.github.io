@@ -5,28 +5,28 @@
   
   <title>windows Hexo+Github 建立博客 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##废了半天劲终于搞定了，下面是一些攻略
-###基本步骤安装 github,nodejs,hexo,按照这篇博客来
-###一些问题安装过程中我遇到一些问题，一：首先安装 github windows desktop 结果下载到百分之三十几停住了 解决方案：下载离线包。
+  <meta name="description" content="废了半天劲终于搞定了，下面是一些攻略
+基本步骤安装 github,nodejs,hexo,按照这篇博客来
+一些问题安装过程中我遇到一些问题，一：首先安装 github windows desktop 结果下载到百分之三十几停住了 解决方案：下载离线包。
 二：用 github–powershell时识别不了 npm 命令 在里面设置下环境变量就ok：bash
-$Env:Path =">
+$Env:Path = $Env:Pat">
 <meta property="og:type" content="article">
 <meta property="og:title" content="windows Hexo+Github 建立博客">
 <meta property="og:url" content="http://yoursite.com/2016/07/31/hi-guys/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="##废了半天劲终于搞定了，下面是一些攻略
-###基本步骤安装 github,nodejs,hexo,按照这篇博客来
-###一些问题安装过程中我遇到一些问题，一：首先安装 github windows desktop 结果下载到百分之三十几停住了 解决方案：下载离线包。
+<meta property="og:description" content="废了半天劲终于搞定了，下面是一些攻略
+基本步骤安装 github,nodejs,hexo,按照这篇博客来
+一些问题安装过程中我遇到一些问题，一：首先安装 github windows desktop 结果下载到百分之三十几停住了 解决方案：下载离线包。
 二：用 github–powershell时识别不了 npm 命令 在里面设置下环境变量就ok：bash
-$Env:Path =">
-<meta property="og:updated_time" content="2016-07-31T03:53:51.035Z">
+$Env:Path = $Env:Pat">
+<meta property="og:updated_time" content="2016-07-31T03:56:54.366Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="windows Hexo+Github 建立博客">
-<meta name="twitter:description" content="##废了半天劲终于搞定了，下面是一些攻略
-###基本步骤安装 github,nodejs,hexo,按照这篇博客来
-###一些问题安装过程中我遇到一些问题，一：首先安装 github windows desktop 结果下载到百分之三十几停住了 解决方案：下载离线包。
+<meta name="twitter:description" content="废了半天劲终于搞定了，下面是一些攻略
+基本步骤安装 github,nodejs,hexo,按照这篇博客来
+一些问题安装过程中我遇到一些问题，一：首先安装 github windows desktop 结果下载到百分之三十几停住了 解决方案：下载离线包。
 二：用 github–powershell时识别不了 npm 命令 在里面设置下环境变量就ok：bash
-$Env:Path =">
+$Env:Path = $Env:Pat">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -64,9 +64,9 @@ $Env:Path =">
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Søk"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -97,15 +97,14 @@ $Env:Path =">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##废了半天劲终于搞定了，下面是一些攻略</p>
-<p>###基本步骤<br>安装 github,nodejs,hexo,按照<a href="http://www.jianshu.com/p/985d07d88ef4" target="_blank" rel="external">这篇博客</a>来</p>
-<p>###一些问题<br>安装过程中我遇到一些问题，<br>一：首先安装 github windows desktop 结果下载到百分之三十几停住了 解决方案：下载离线包。</p>
+        <p>废了半天劲终于搞定了，下面是一些攻略</p>
+<h3 id="基本步骤"><a href="#基本步骤" class="headerlink" title="基本步骤"></a>基本步骤</h3><p>安装 github,nodejs,hexo,按照<a href="http://www.jianshu.com/p/985d07d88ef4" target="_blank" rel="external">这篇博客</a>来</p>
+<h3 id="一些问题"><a href="#一些问题" class="headerlink" title="一些问题"></a>一些问题</h3><p>安装过程中我遇到一些问题，<br>一：首先安装 github windows desktop 结果下载到百分之三十几停住了 解决方案：下载离线包。</p>
 <p>二：用 github–powershell时识别不了 npm 命令 在里面设置下环境变量就ok：<br><code>bash
 $Env:Path = $Env:Path +&quot;&lt;npm的路径&gt;&quot;</code>bash<br>然后装hexo，再添加hexo的路径。但是重启后用hexo提示找不到node，google发现是环境变量的问题，用<br><code>bash
 $env:path -split &#39;;&#39; | SelectString-nodejs</code>bash<br>查找nodejs的路径，原来把一个;打成了：，此时要修改环境变量怎么办，解决方法，先把path导出<br><code>bash
 $env:path&lt;&lt;a.out</code>bash<br>然后修改a.out再复制出来。</p>
-<p>###hexo的一些命令</p>
-<p>1.新建文章<br><code>bash
+<h3 id="hexo的一些命令"><a href="#hexo的一些命令" class="headerlink" title="hexo的一些命令"></a>hexo的一些命令</h3><p>1.新建文章<br><code>bash
 hexo new &quot;text&quot; 新建文章</code>bash</p>
 <p>2.生成<br><code>bash
 hexo generate</code>bash</p>
@@ -113,12 +112,12 @@ hexo generate</code>bash</p>
 hexo deploy</code>bash</p>
 <p>合并起来简写就是<br><code>bash
 hexo d -g</code>bash</p>
-<p>###hexo的编辑<br><a href="url">text</a>  点击tetx可以链接到url</p>
-<h2 id="Quick-Start-二级标题"><a href="#Quick-Start-二级标题" class="headerlink" title="Quick Start  二级标题"></a>Quick Start  二级标题</h2><h3 id="Create-a-new-post-三级标题"><a href="#Create-a-new-post-三级标题" class="headerlink" title="Create a new post 三级标题"></a>Create a new post 三级标题</h3>
+<h3 id="hexo的编辑"><a href="#hexo的编辑" class="headerlink" title="hexo的编辑"></a>hexo的编辑</h3><p><a href="url">text</a>  点击tetx可以链接到url<br>“##”  二级标题<br>“###” 三级标题</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/31/hi-guys/" data-id="cira05lgc0000ac2rm1cz9f0i" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2016/07/31/hi-guys/" data-id="cira05lgc0000ac2rm1cz9f0i" class="article-share-link">Share</a>
       
       
     </footer>
@@ -142,7 +141,7 @@ hexo d -g</code>bash</p>
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Arkiv</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a></li></ul>
     </div>
@@ -152,7 +151,7 @@ hexo d -g</code>bash</p>
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Siste innlegg</h3>
     <div class="widget">
       <ul>
         
@@ -173,7 +172,7 @@ hexo d -g</code>bash</p>
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2016 John Doe<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
