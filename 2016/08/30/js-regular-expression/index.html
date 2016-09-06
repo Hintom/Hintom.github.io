@@ -4,14 +4,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Welcome, Guys.</title>
+  <title>js regular expression | Welcome, Guys.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Welcome, Guys.">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="基本规则/d  任意一个数字，0~9 中的任意一个/D  匹配所有的非数字字符/w    任意一个字母或数字或下划线，也就是 A~Z,a~z,0~9,_ 中任意一个/W  匹配所有的字母、数字、下划线以外的字符/s  包括空格、制表符、换页符等空白字符的其中任意一个/S  匹配所有非空白字符/b  本身不匹配任何字符,要求它在匹配结果中所处位置的左右两边，其中一边是 “/w” 范围，另一边是 非”">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js regular expression">
+<meta property="og:url" content="http://yoursite.com/2016/08/30/js-regular-expression/index.html">
 <meta property="og:site_name" content="Welcome, Guys.">
+<meta property="og:description" content="基本规则/d  任意一个数字，0~9 中的任意一个/D  匹配所有的非数字字符/w    任意一个字母或数字或下划线，也就是 A~Z,a~z,0~9,_ 中任意一个/W  匹配所有的字母、数字、下划线以外的字符/s  包括空格、制表符、换页符等空白字符的其中任意一个/S  匹配所有非空白字符/b  本身不匹配任何字符,要求它在匹配结果中所处位置的左右两边，其中一边是 “/w” 范围，另一边是 非”">
+<meta property="og:updated_time" content="2016-09-01T12:07:37.644Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Welcome, Guys.">
+<meta name="twitter:title" content="js regular expression">
+<meta name="twitter:description" content="基本规则/d  任意一个数字，0~9 中的任意一个/D  匹配所有的非数字字符/w    任意一个字母或数字或下划线，也就是 A~Z,a~z,0~9,_ 中任意一个/W  匹配所有的字母、数字、下划线以外的字符/s  包括空格、制表符、换页符等空白字符的其中任意一个/S  匹配所有非空白字符/b  本身不匹配任何字符,要求它在匹配结果中所处位置的左右两边，其中一边是 “/w” 范围，另一边是 非”">
   
     <link rel="alternative" href="/atom.xml" title="Welcome, Guys." type="application/atom+xml">
   
@@ -68,58 +72,7 @@
   </div>
 </header>
     <div class="outer">
-      <section id="main">
-  
-    <article id="post-ssh-tutorials" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/08/31/ssh-tutorials/" class="article-date">
-  <time datetime="2016-08-31T12:35:12.000Z" itemprop="datePublished">2016-08-31</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/31/ssh-tutorials/">ssh tutorials</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>##</p>
-<p>主要参考以下网址：<br><a href="https://help.ubuntu.com/community/SSH/OpenSSH/Keys" target="_blank" rel="external">https://help.ubuntu.com/community/SSH/OpenSSH/Keys</a><br><a href="https://support.suso.com/supki/SSH_Tutorial_for_Linux" target="_blank" rel="external">https://support.suso.com/supki/SSH_Tutorial_for_Linux</a><br><a href="http://blog.chinaunix.net/uid-22556372-id-1773417.html" target="_blank" rel="external">http://blog.chinaunix.net/uid-22556372-id-1773417.html</a></p>
-<h2 id="开启-关闭-password-authentification"><a href="#开启-关闭-password-authentification" class="headerlink" title="开启/关闭 password authentification"></a>开启/关闭 password authentification</h2><p>To disable password authentication, look for the following line in your sshd_config file:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#PasswordAuthentication yes</span></div></pre></td></tr></table></figure>
-<p>replace it with a line that looks like this:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">PasswordAuthentication no</div></pre></td></tr></table></figure>
-<p>Once you have saved the file and restarted your SSH server, you shouldn’t even be asked for a password when you log in.</p>
-<h2 id="root登录提示-密码正确"><a href="#root登录提示-密码正确" class="headerlink" title="root登录提示(密码正确)"></a>root登录提示(密码正确)</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">permission denied</div></pre></td></tr></table></figure>
-<p>修改sshd_config file:PermitRootLogin yes</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://yoursite.com/2016/08/31/ssh-tutorials/" data-id="cisrnr7c80006mg2rah8u4p6m" class="article-share-link">Share</a>
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-js-regular-expression" class="article article-type-post" itemscope itemprop="blogPost">
+      <section id="main"><article id="post-js-regular-expression" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/08/30/js-regular-expression/" class="article-date">
   <time datetime="2016-08-30T06:49:32.000Z" itemprop="datePublished">2016-08-30</time>
@@ -132,8 +85,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/30/js-regular-expression/">js regular expression</a>
+    <h1 class="article-title" itemprop="name">
+      js regular expression
     </h1>
   
 
@@ -194,231 +147,29 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-CSS-Materials" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/08/10/CSS-Materials/" class="article-date">
-  <time datetime="2016-08-10T13:53:21.000Z" itemprop="datePublished">2016-08-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2016/08/31/ssh-tutorials/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
+          ssh tutorials
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/10/CSS-Materials/">CSS Materials</a>
-    </h1>
   
+    <a href="/2016/08/10/CSS-Materials/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">CSS Materials</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>A blog show css in detail:<br><a href="http://www.cnblogs.com/linjiqin/p/3556497.html" target="_blank" rel="external">http://www.cnblogs.com/linjiqin/p/3556497.html</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://yoursite.com/2016/08/10/CSS-Materials/" data-id="cisrnr7bo0002mg2rikr5rd8p" class="article-share-link">Share</a>
-      
-
-      
-
-      
-    </footer>
-  </div>
   
 </article>
 
-
-  
-    <article id="post-Job-schedule" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/08/02/Job-schedule/" class="article-date">
-  <time datetime="2016-08-02T13:46:04.000Z" itemprop="datePublished">2016-08-02</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/02/Job-schedule/">Job schedule</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>8-2<br>For the last week,<br>fix bug host name exclusion on security/signature page.<br>–redirect the page to edit lbgrooup rather than parent page when create new lbgroup.<br>–enable LB and Fail Over checkboxes by default when a LB group is created or globally</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://yoursite.com/2016/08/02/Job-schedule/" data-id="cisrnr7b90000mg2rre6fqdi0" class="article-share-link">Share</a>
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-ssh-problems" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/08/01/ssh-problems/" class="article-date">
-  <time datetime="2016-08-01T10:00:22.000Z" itemprop="datePublished">2016-08-01</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/ssh-linux/">ssh,linux</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/01/ssh-problems/">ssh problems</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>couldn’t load hostkey<br>解决方案：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">/usr/bin/ssh-keygen -A</div><div class="line">然后再启动</div><div class="line">/usr/sbin/sshd -D</div></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://yoursite.com/2016/08/01/ssh-problems/" data-id="cisrnr7bq0003mg2rp04qnuqa" class="article-share-link">Share</a>
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-EatMoneyMark" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/08/01/EatMoneyMark/" class="article-date">
-  <time datetime="2016-08-01T09:04:44.000Z" itemprop="datePublished">2016-08-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/01/EatMoneyMark/">EatMoneyMark</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>《————用于记账————》<br>Mon   Tue   Wed   Thu   Fri<br>6.9   8.3   7     8.3   </p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://yoursite.com/2016/08/01/EatMoneyMark/" data-id="cisrnr7bj0001mg2rml2ileic" class="article-share-link">Share</a>
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hexoToBlog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/07/31/hexoToBlog/" class="article-date">
-  <time datetime="2016-07-31T02:20:29.000Z" itemprop="datePublished">2016-07-31</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/31/hexoToBlog/">windows Hexo+Github 建立博客</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>废了半天劲终于搞定了，下面是一些攻略</p>
-<h3 id="基本步骤"><a href="#基本步骤" class="headerlink" title="基本步骤"></a>基本步骤</h3><p>安装 github,nodejs,hexo,按照<a href="http://www.jianshu.com/p/985d07d88ef4">这篇博客</a>来</p>
-        
-          <p class="article-more-link">
-            <a href="/2016/07/31/hexoToBlog/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://yoursite.com/2016/07/31/hexoToBlog/" data-id="cisrnr7ca0007mg2rp3jz31f8" class="article-share-link">Share</a>
-      
-
-      
-
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog-hexo-markdown/">blog,hexo,markdown</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-  
 </section>
       
       <aside id="sidebar">

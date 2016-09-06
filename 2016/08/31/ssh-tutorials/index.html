@@ -4,21 +4,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>windows Hexo+Github 建立博客 | Welcome, Guys.</title>
+  <title>ssh tutorials | Welcome, Guys.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="废了半天劲终于搞定了，下面是一些攻略
-基本步骤安装 github,nodejs,hexo,按照这篇博客来">
+  <meta name="description" content="##
+主要参考以下网址：https://help.ubuntu.com/community/SSH/OpenSSH/Keyshttps://support.suso.com/supki/SSH_Tutorial_for_Linuxhttp://blog.chinaunix.net/uid-22556372-id-1773417.html
+开启/关闭 password authentificatio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="windows Hexo+Github 建立博客">
-<meta property="og:url" content="http://yoursite.com/2016/07/31/hexoToBlog/index.html">
+<meta property="og:title" content="ssh tutorials">
+<meta property="og:url" content="http://yoursite.com/2016/08/31/ssh-tutorials/index.html">
 <meta property="og:site_name" content="Welcome, Guys.">
-<meta property="og:description" content="废了半天劲终于搞定了，下面是一些攻略
-基本步骤安装 github,nodejs,hexo,按照这篇博客来">
-<meta property="og:updated_time" content="2016-07-31T05:35:57.023Z">
+<meta property="og:description" content="##
+主要参考以下网址：https://help.ubuntu.com/community/SSH/OpenSSH/Keyshttps://support.suso.com/supki/SSH_Tutorial_for_Linuxhttp://blog.chinaunix.net/uid-22556372-id-1773417.html
+开启/关闭 password authentificatio">
+<meta property="og:updated_time" content="2016-09-02T02:37:27.326Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="windows Hexo+Github 建立博客">
-<meta name="twitter:description" content="废了半天劲终于搞定了，下面是一些攻略
-基本步骤安装 github,nodejs,hexo,按照这篇博客来">
+<meta name="twitter:title" content="ssh tutorials">
+<meta name="twitter:description" content="##
+主要参考以下网址：https://help.ubuntu.com/community/SSH/OpenSSH/Keyshttps://support.suso.com/supki/SSH_Tutorial_for_Linuxhttp://blog.chinaunix.net/uid-22556372-id-1773417.html
+开启/关闭 password authentificatio">
   
     <link rel="alternative" href="/atom.xml" title="Welcome, Guys." type="application/atom+xml">
   
@@ -75,16 +78,12 @@
   </div>
 </header>
     <div class="outer">
-      <section id="main"><article id="post-hexoToBlog" class="article article-type-post" itemscope itemprop="blogPost">
+      <section id="main"><article id="post-ssh-tutorials" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/07/31/hexoToBlog/" class="article-date">
-  <time datetime="2016-07-31T02:20:29.000Z" itemprop="datePublished">2016-07-31</time>
+    <a href="/2016/08/31/ssh-tutorials/" class="article-date">
+  <time datetime="2016-08-31T12:35:12.000Z" itemprop="datePublished">2016-08-31</time>
 </a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
-  </div>
-
   </div>
   <div class="article-inner">
     
@@ -93,7 +92,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      windows Hexo+Github 建立博客
+      ssh tutorials
     </h1>
   
 
@@ -101,47 +100,37 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>废了半天劲终于搞定了，下面是一些攻略</p>
-<h3 id="基本步骤"><a href="#基本步骤" class="headerlink" title="基本步骤"></a>基本步骤</h3><p>安装 github,nodejs,hexo,按照<a href="http://www.jianshu.com/p/985d07d88ef4" target="_blank" rel="external">这篇博客</a>来</p>
-<a id="more"></a>
-<h3 id="一些问题"><a href="#一些问题" class="headerlink" title="一些问题"></a>一些问题</h3><p>安装过程中我遇到一些问题，<br>一：首先安装 github windows desktop 结果下载到百分之三十几停住了 解决方案：下载离线包。</p>
-<p>二：用 github–powershell时识别不了 npm 命令 在里面设置下环境变量就ok：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$Env</span>:Path = <span class="variable">$Env</span>:Path +<span class="string">"&lt;npm的路径&gt;"</span></div></pre></td></tr></table></figure></p>
-<p>然后装hexo，再添加hexo的路径。但是重启后用hexo提示找不到node，google发现是环境变量的问题，用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$env</span>:path -split <span class="string">';'</span> | SelectString-nodejs</div></pre></td></tr></table></figure></p>
-<p>查找nodejs的路径，原来把一个;打成了：，此时要修改环境变量怎么办，解决方法，先把path导出<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$env</span>:path&lt;&lt;a.out</div></pre></td></tr></table></figure></p>
-<p>然后修改a.out再复制出来。</p>
-<h3 id="hexo的一些命令"><a href="#hexo的一些命令" class="headerlink" title="hexo的一些命令"></a>hexo的一些命令</h3><p>1.新建文章<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new <span class="string">"text"</span> 新建文章</div></pre></td></tr></table></figure></p>
-<p>2.生成<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo generate</div></pre></td></tr></table></figure></p>
-<p>3.部署到git<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div></pre></td></tr></table></figure></p>
-<p>合并起来简写就是<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d -g</div></pre></td></tr></table></figure></p>
-<h3 id="hexo的编辑"><a href="#hexo的编辑" class="headerlink" title="hexo的编辑"></a>hexo的编辑</h3><p>“## “  二级标题  注意不要漏了空格<br>“### “ 三级标题<br>更多markdown语法请参考<a href="http://ibruce.info/2013/11/26/markdown/" target="_blank" rel="external">markdown语法</a></p>
+        <p>##</p>
+<p>主要参考以下网址：<br><a href="https://help.ubuntu.com/community/SSH/OpenSSH/Keys" target="_blank" rel="external">https://help.ubuntu.com/community/SSH/OpenSSH/Keys</a><br><a href="https://support.suso.com/supki/SSH_Tutorial_for_Linux" target="_blank" rel="external">https://support.suso.com/supki/SSH_Tutorial_for_Linux</a><br><a href="http://blog.chinaunix.net/uid-22556372-id-1773417.html" target="_blank" rel="external">http://blog.chinaunix.net/uid-22556372-id-1773417.html</a></p>
+<h2 id="开启-关闭-password-authentification"><a href="#开启-关闭-password-authentification" class="headerlink" title="开启/关闭 password authentification"></a>开启/关闭 password authentification</h2><p>To disable password authentication, look for the following line in your sshd_config file:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#PasswordAuthentication yes</span></div></pre></td></tr></table></figure>
+<p>replace it with a line that looks like this:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">PasswordAuthentication no</div></pre></td></tr></table></figure>
+<p>Once you have saved the file and restarted your SSH server, you shouldn’t even be asked for a password when you log in.</p>
+<h2 id="root登录提示-密码正确"><a href="#root登录提示-密码正确" class="headerlink" title="root登录提示(密码正确)"></a>root登录提示(密码正确)</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">permission denied</div></pre></td></tr></table></figure>
+<p>修改sshd_config file:PermitRootLogin yes</p>
 
       
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2016/07/31/hexoToBlog/" data-id="cisrnr7ca0007mg2rp3jz31f8" class="article-share-link">Share</a>
+        <a data-url="http://yoursite.com/2016/08/31/ssh-tutorials/" data-id="cisrnr7c80006mg2rah8u4p6m" class="article-share-link">Share</a>
       
 
       
 
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog-hexo-markdown/">blog,hexo,markdown</a></li></ul>
-
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/2016/08/01/EatMoneyMark/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          EatMoneyMark
-        
-      </div>
-    </a>
   
+    <a href="/2016/08/30/js-regular-expression/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">js regular expression</div>
+    </a>
   
 </nav>
 
