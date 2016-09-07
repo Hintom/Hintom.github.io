@@ -6,16 +6,16 @@
   
   <title>js regular expression | Welcome, Guys.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="基本规则/d  任意一个数字，0~9 中的任意一个/D  匹配所有的非数字字符/w    任意一个字母或数字或下划线，也就是 A~Z,a~z,0~9,_ 中任意一个/W  匹配所有的字母、数字、下划线以外的字符/s  包括空格、制表符、换页符等空白字符的其中任意一个/S  匹配所有非空白字符/b  本身不匹配任何字符,要求它在匹配结果中所处位置的左右两边，其中一边是 “/w” 范围，另一边是 非”">
+  <meta name="description" content="基本规则">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js regular expression">
 <meta property="og:url" content="http://yoursite.com/2016/08/30/js-regular-expression/index.html">
 <meta property="og:site_name" content="Welcome, Guys.">
-<meta property="og:description" content="基本规则/d  任意一个数字，0~9 中的任意一个/D  匹配所有的非数字字符/w    任意一个字母或数字或下划线，也就是 A~Z,a~z,0~9,_ 中任意一个/W  匹配所有的字母、数字、下划线以外的字符/s  包括空格、制表符、换页符等空白字符的其中任意一个/S  匹配所有非空白字符/b  本身不匹配任何字符,要求它在匹配结果中所处位置的左右两边，其中一边是 “/w” 范围，另一边是 非”">
-<meta property="og:updated_time" content="2016-09-01T12:07:37.644Z">
+<meta property="og:description" content="基本规则">
+<meta property="og:updated_time" content="2016-09-07T11:29:28.758Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js regular expression">
-<meta name="twitter:description" content="基本规则/d  任意一个数字，0~9 中的任意一个/D  匹配所有的非数字字符/w    任意一个字母或数字或下划线，也就是 A~Z,a~z,0~9,_ 中任意一个/W  匹配所有的字母、数字、下划线以外的字符/s  包括空格、制表符、换页符等空白字符的其中任意一个/S  匹配所有非空白字符/b  本身不匹配任何字符,要求它在匹配结果中所处位置的左右两边，其中一边是 “/w” 范围，另一边是 非”">
+<meta name="twitter:description" content="基本规则">
   
     <link rel="alternative" href="/atom.xml" title="Welcome, Guys." type="application/atom+xml">
   
@@ -94,7 +94,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="基本规则"><a href="#基本规则" class="headerlink" title="基本规则"></a>基本规则</h2><p>/d  任意一个数字，0~9 中的任意一个<br>/D  匹配所有的非数字字符<br>/w    任意一个字母或数字或下划线，也就是 A~Z,a~z,0~9,_ 中任意一个<br>/W  匹配所有的字母、数字、下划线以外的字符<br>/s  包括空格、制表符、换页符等空白字符的其中任意一个<br>/S  匹配所有非空白字符<br>/b  本身不匹配任何字符,要求它在匹配结果中所处位置的左右两边，其中一边是 “/w” 范围，另一边是 非”/w” 的范围<br>/B  匹配非单词边界，即左右两边都是 “/w” 范围或者左右两边都不是 “/w” 范围时的字符缝隙</p>
+        <h2 id="基本规则"><a href="#基本规则" class="headerlink" title="基本规则"></a>基本规则</h2><a id="more"></a>
+<p>/d  任意一个数字，0~9 中的任意一个<br>/D  匹配所有的非数字字符<br>/w    任意一个字母或数字或下划线，也就是 A~Z,a~z,0~9,_ 中任意一个<br>/W  匹配所有的字母、数字、下划线以外的字符<br>/s  包括空格、制表符、换页符等空白字符的其中任意一个<br>/S  匹配所有非空白字符<br>/b  本身不匹配任何字符,要求它在匹配结果中所处位置的左右两边，其中一边是 “/w” 范围，另一边是 非”/w” 的范围<br>/B  匹配非单词边界，即左右两边都是 “/w” 范围或者左右两边都不是 “/w” 范围时的字符缝隙</p>
 <p>[ab5@]    匹配 “a” 或 “b” 或 “5” 或 “@”<br>[^abc]    匹配 “a”,”b”,”c” 之外的任意一个字符<br>[f-k]    匹配 “f”~”k” 之间的任意一个字母<br>[^A-F0-3]    匹配 “A”~”F”,”0”~”3” 之外的任意一个字符<br>{n}        表达式重复n次<br>{m,n}    表达式至少重复m次，最多重复n次<br>{m,}    表达式至少重复m次<br>.        小数点可以匹配除了换行符（/n）以外的任意一个字符<br>?        匹配表达式0次或者1次</p>
 <ul>
 <li>表达式至少出现1次，相当于 {1,}</li>
@@ -138,7 +139,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2016/08/30/js-regular-expression/" data-id="cisstgnnu0004rc2r1tuq7b7e" class="article-share-link">Share</a>
+        <a data-url="http://yoursite.com/2016/08/30/js-regular-expression/" data-id="cisstgnnu0004rc2r1tuq7b7e" class="article-share-link">分享到</a>
       
 
       
@@ -151,7 +152,7 @@
 <nav id="article-nav">
   
     <a href="/2016/08/31/ssh-tutorials/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
+      <strong class="article-nav-caption">下一篇</strong>
       <div class="article-nav-title">
         
           ssh tutorials
@@ -161,7 +162,7 @@
   
   
     <a href="/2016/08/10/CSS-Materials/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">上一篇</strong>
       <div class="article-nav-title">CSS Materials</div>
     </a>
   
@@ -176,7 +177,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
+    <h3 class="widget-title">分类</h3>
     <div class="widget">
       <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScript/">JavaScript</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ssh-linux/">ssh,linux</a><span class="category-list-count">1</span></li></ul>
     </div>
@@ -185,7 +186,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
+    <h3 class="widget-title">标签</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog-hexo-markdown/">blog,hexo,markdown</a><span class="tag-list-count">1</span></li></ul>
     </div>
@@ -194,7 +195,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
       <a href="/tags/blog-hexo-markdown/" style="font-size: 10px;">blog,hexo,markdown</a>
     </div>
@@ -203,7 +204,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">归档</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a><span class="archive-list-count">1</span></li></ul>
     </div>
@@ -212,7 +213,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">近期文章</h3>
     <div class="widget">
       <ul>
         
@@ -243,7 +244,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Links</h3>
+    <h3 class="widget-title">友情链接</h3>
     <div class="widget">
       <ul>
         
@@ -280,7 +281,7 @@
 </nav>
   <!-- totop start -->
 <div id="totop">
-<a title="totop"><img src="/img/scrollup.png"/></a>
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
 </div>
 
 <!-- totop end -->

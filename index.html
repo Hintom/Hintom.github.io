@@ -104,7 +104,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2016/09/07/ruby-yaml/" data-id="cisstgno50007rc2rpg6pwr08" class="article-share-link">Share</a>
+        <a data-url="http://yoursite.com/2016/09/07/ruby-yaml/" data-id="cisstgno50007rc2rpg6pwr08" class="article-share-link">分享到</a>
       
 
       
@@ -139,8 +139,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##</p>
-<p>主要参考以下网址：<br><a href="https://help.ubuntu.com/community/SSH/OpenSSH/Keys">https://help.ubuntu.com/community/SSH/OpenSSH/Keys</a><br><a href="https://support.suso.com/supki/SSH_Tutorial_for_Linux">https://support.suso.com/supki/SSH_Tutorial_for_Linux</a><br><a href="http://blog.chinaunix.net/uid-22556372-id-1773417.html">http://blog.chinaunix.net/uid-22556372-id-1773417.html</a><br>
+        <h2 id="主要参考以下网址："><a href="#主要参考以下网址：" class="headerlink" title="主要参考以下网址："></a>主要参考以下网址：</h2><p><a href="https://help.ubuntu.com/community/SSH/OpenSSH/Keys">https://help.ubuntu.com/community/SSH/OpenSSH/Keys</a><br><a href="https://support.suso.com/supki/SSH_Tutorial_for_Linux">https://support.suso.com/supki/SSH_Tutorial_for_Linux</a><br><a href="http://blog.chinaunix.net/uid-22556372-id-1773417.html">http://blog.chinaunix.net/uid-22556372-id-1773417.html</a><br>
         
           <p class="article-more-link">
             <a href="/2016/08/31/ssh-tutorials/#more">Read More</a>
@@ -150,7 +149,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2016/08/31/ssh-tutorials/" data-id="cisstgno90009rc2rexwwlhfb" class="article-share-link">Share</a>
+        <a data-url="http://yoursite.com/2016/08/31/ssh-tutorials/" data-id="cisstgno90009rc2rexwwlhfb" class="article-share-link">分享到</a>
       
 
       
@@ -185,51 +184,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="基本规则"><a href="#基本规则" class="headerlink" title="基本规则"></a>基本规则</h2><p>/d  任意一个数字，0~9 中的任意一个<br>/D  匹配所有的非数字字符<br>/w    任意一个字母或数字或下划线，也就是 A~Z,a~z,0~9,_ 中任意一个<br>/W  匹配所有的字母、数字、下划线以外的字符<br>/s  包括空格、制表符、换页符等空白字符的其中任意一个<br>/S  匹配所有非空白字符<br>/b  本身不匹配任何字符,要求它在匹配结果中所处位置的左右两边，其中一边是 “/w” 范围，另一边是 非”/w” 的范围<br>/B  匹配非单词边界，即左右两边都是 “/w” 范围或者左右两边都不是 “/w” 范围时的字符缝隙</p>
-<p>[ab5@]    匹配 “a” 或 “b” 或 “5” 或 “@”<br>[^abc]    匹配 “a”,”b”,”c” 之外的任意一个字符<br>[f-k]    匹配 “f”~”k” 之间的任意一个字母<br>[^A-F0-3]    匹配 “A”~”F”,”0”~”3” 之外的任意一个字符<br>{n}        表达式重复n次<br>{m,n}    表达式至少重复m次，最多重复n次<br>{m,}    表达式至少重复m次<br>.        小数点可以匹配除了换行符（/n）以外的任意一个字符<br>?        匹配表达式0次或者1次</p>
-<ul>
-<li>表达式至少出现1次，相当于 {1,}</li>
-</ul>
-<ul>
-<li>表达式不出现或出现任意次<br>^        与字符串开始的地方匹配，不匹配任何字符<br>$        与字符串结束的地方匹配，不匹配任何字符<br>|        左右两边表达式之间 “或” 关系，匹配左边或者右边<br>()        在被修饰匹配次数的时候，括号中的表达式可以作为整体被修饰<br>后面有特殊意义的字符，如需匹配，需要加/， 如/? 表示匹配?</li>
-</ul>
-<h2 id="高级规则"><a href="#高级规则" class="headerlink" title="高级规则"></a>高级规则</h2><p>1.贪婪模式</p>
-<pre><code>在使用修饰匹配次数的特殊符号时，比如：&quot;{m,n}&quot;, &quot;{m,}&quot;, &quot;?&quot;, &quot;*&quot;, 
-</code></pre><p>“+”尽可能多的匹配。<br>    比如，针对文本 “dxxxdxxxd”，举例如下：<br>(d)(/w+)    “/w+” 将匹配第一个 “d” 之后的所有字符 “xxxdxxxd”<br>(d)(/w+)(d)<br>“/w+” 将匹配第一个 “d” 和最后一个 “d” 之间的所有字符 “xxxdxxx”</p>
-<p>2.非贪婪模式</p>
-<pre><code>在修饰匹配次数的特殊符号后再加上一个 &quot;?&quot; 号，则可以使匹配次数不定的表达式尽可能少的匹配
-</code></pre><p>比如，针对文本 “dxxxdxxxd”，举例如下：<br>(d)(/w+?)    “/w+?” 将尽可能少的匹配第一个 “d” 之后的字符，结果是：”/w+?” 只匹配了一个 “x”<br>(d)(/w+?)(d)    为了让整个表达式匹配成功，”/w+?” 不得不匹配 “xxx” 才可以让后边的 “d” 匹配，从而使整个表达式匹配成功。因此，结果是：”/w+?” 匹配 “xxx”</p>
-<p>3.反向引用</p>
-<pre><code>&quot;/1&quot; 引用第1对括号内匹配到的字符串，&quot;/2&quot; 引用第2对括号内匹配到的字符串……
-</code></pre><p>举例：表达式 “(/w)/1{4,}” 在匹配 “aa bbbb abcdefg ccccc 111121111 999999999” 时，匹配结果是：成功；匹配到的内容是 “ccccc”。再次匹配下一个时，将得到 999999999。这个表达式要求 “/w” 范围的字符至少重复5次，注意与 “/w{5,}” 之间的区别</p>
-<p>举例：表达式 “&lt;(/w+)/s<em>(/w+(=(‘|”).</em>?/4)?/s<em>)</em>&gt;.*?&lt;//1&gt;” 在匹配 “<td id="td1" style="bgcolor:white"></td>“ 时，匹配结果是成功。如果 “<td>“ 与 “</td>“ 不配对，则会匹配失败；如果改成其他配对，也可以匹配成功。</p>
-<p>4.预搜索</p>
-<p>正向预搜索：”(?=xxxxx)”，”(?!xxxxx)”<br>格式：”(?=xxxxx)”，在被匹配的字符串中，它对所处的 “缝隙” 或者 “两头” 附加的条件是：所在缝隙的右侧，必须能够匹配上 xxxxx 这部分的表达式。</p>
-<p>举例1：表达式 “Windows (?=NT|XP)” 在匹配 “Windows 98, Windows NT, Windows 2000” 时，将只匹配 “Windows NT” 中的 “Windows “，其他的 “Windows “ 字样则不被匹配。</p>
-<p>举例2：表达式 “(/w)((?=/1/1/1)(/1))+” 在匹配字符串 “aaa ffffff 999999999” 时，将可以匹配6个”f”的前4个，可以匹配9个”9”的前7个。 部分。当然，这个表达式可以不这样写，在此的目的是作为演示之用。</p>
-<p>格式：”(?!xxxxx)”，所在缝隙的右侧，必须不能匹配 xxxxx 这部分表达式。</p>
-<p>举例4：表达式 “do(?!/w)” 在匹配字符串 “done, do, dog” 时，只能匹配 “do”。在本条举例中，”do” 后边使用 “(?!/w)” 和使用 “/b” 效果是一样的。</p>
-<h2 id="一些实例"><a href="#一些实例" class="headerlink" title="一些实例"></a>一些实例</h2><p>1.(x)：表示匹配x(并非特指字符x或者特指一个字符，x表示一个字符串)，而且匹配会被记住，在语法中这种()被称为“capturing parentheses ”，即捕捉用的小括号。<br>var regx=/a(b)c/;<br>var rs=regx.exec(“abcddd”);<br>从上面可以看出,/a(b)c/匹配“abcddd”中的“abc”，因为()的原因，b也会记录下来，因此rs返回的数字内容为：<br>{abc,b}</p>
-<p>2.var regx=/a(b)c/;<br>var rs=regx.exec(“acbcddd”);<br>rs返回null，因为/a(b)c/不匹配“acbcddd”，所以()中的b不会被记录下来（尽管字符串中含有b</p>
-<p>3.(?:x)：匹配x，但不会记住x，这种格式中的()被称为“non-capturing parentheses ”，即非捕捉用的小括号。<br>例子：<br>var regx=/a(?:b)c/;<br>var rs=regx.exec(“abcddd”);<br>从上面可以看出,/a(?:b)c/匹配“abcddd”中的“abc”，因为(?:)的原因，b不会记录下来，因此rs返回的数字内容为：<br>{abc}</p>
-<h2 id="表达式操作"><a href="#表达式操作" class="headerlink" title="表达式操作"></a>表达式操作</h2><ol>
-<li>exec(str)，返回str中与表达式相匹配的第一个字符串，而且以数组的形式表现，当然如果表达式中含有捕捉用的小括号，则返回的数组中也可能含有()中的匹配字符串，例如：<br>var regx=//d+/;<br>var rs=regx.exec(“3432ddf53”);<br>返回的rs值为：{3432}</li>
-</ol>
-<p>var regx2=new RegExp(“ab(/d+)c”);<br>var rs2=regx2.exec(“ab234c44”);<br>返回的rs2值为 {ab234c,234}</p>
-<p>2.test(str)，判断字符串str是否匹配表达式，返回一个布尔值。例如<br>var regx=/user/d+/g;<br>var flag=regx.test(“user12dd”);<br>flag的值为true。</p>
-<p>string的用法<br>3.match(expr)<br>4.search(expr)<br>5.replace(expr,str)，将字符串中匹配expr的部分替换为str。另外在replace方法中，str中可以含有一种变量符号$，格式为$n，代表匹配中被记住的第n的匹配字符串（注意小括号可以记忆匹配）。</p>
-<h2 id="一些参数的用法"><a href="#一些参数的用法" class="headerlink" title="一些参数的用法"></a>一些参数的用法</h2><p>1.对于表达式对象的exec方法，不加入g，则只返回第一个匹配，无论执行多少次均是如此，如果加入g，则第一次执行也返回第一个匹配，再执行返回第二个匹配，依次类推。例如<br>var regx=/user/d/;<br>var str=“user18dsdfuser2dsfsd”;<br>var rs=regx.exec(str);//此时rs的值为{user1}<br>var rs2=regx.exec(str);//此时rs的值依然为{user1}<br>如果regx=/user/d/g；则rs的值为{user1}，rs2的值为{user2}</p>
-<p>2.对于String对象的match方法，不加入g，也只是返回第一个匹配，一直执行match方法也总是返回第一个匹配，加入g，则一次返回所有的匹配（注意这与表达式对象的exec方法不同，对于exec而言，表达式即使加上了g，也不会一次返回所有的匹配）。例如：<br>var regx=/user/d/;<br>var str=“user1sdfsffuser2dfsdf”;<br>var rs=str.match(regx);//此时rs的值为{user1}<br>var rs2=str.match(regx);//此时rs的值依然为{user1}<br>如果regx=/user/d/g，则rs的值为{user1,user2}，rs2的值也为{user1,user2}</p>
-<p>3.对于String对象的replace方法，表达式不加入g，则只替换第一个匹配，如果加入g，则替换所有匹配。（开头的三道测试题能很好的说明这一点）</p>
-<p>4.附加参数m，表明可以进行多行匹配，但是这个只有当使用^和$模式时才会起作用，在其他的模式中，加不加入m都可以进行多行匹配</p>
-<p>使用^的例子<br>var regx=/^b./g;<br>var str=“bd76 dfsdf<br>         sdfsdfs dffs<br>         b76dsf sdfsdf”;<br>var rs=str.match(regx);<br>此时加入g和不加入g，都只返回第一个匹配{bd}，如果regx=/^b./gm，则返回所有的匹配{bd,b7}，注意如果regx=/^b./m，则也只返回第一个匹配。所以，加入m表明可以进行多行匹配，加入g表明可以进行全局匹配，综合到一起就是可以进行多行全局匹配</p>
-<p>因此对于m我们要清楚它的使用，记住它只对^和$模式起作用，在这两种模式中，m的作用为：如果不加入m，则只能在第一行进行匹配，如果加入m则可以在所有的行进行匹配。我们再看一个^的例子<br>var regx=/^b./;<br>var str=“ret76 dfsdf<br>         bjfsdfs dffs<br>         b76dsf sdfsdf”;<br>var rs=str.match(regx);<br>此时rs的值为null，如果加入g，rs的值仍然为null，如果加入m，则rs的值为{bj}（也就是说，在第一行没有找到匹配，因为有参数m，所以可以继续去下面的行去找是否有匹配），如果m和g都加上，则返回{bj,b7}（只加m不加g说明，可以去多行进行匹配，但是找到一个匹配后就返回，加入g表明将多行中所有的匹配返回，当然对于match方法是如此，对于exec呢，则需要执行多次才能依次返回）</p>
-
+        <h2 id="基本规则"><a href="#基本规则" class="headerlink" title="基本规则"></a>基本规则</h2>
+        
+          <p class="article-more-link">
+            <a href="/2016/08/30/js-regular-expression/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2016/08/30/js-regular-expression/" data-id="cisstgnnu0004rc2r1tuq7b7e" class="article-share-link">Share</a>
+        <a data-url="http://yoursite.com/2016/08/30/js-regular-expression/" data-id="cisstgnnu0004rc2r1tuq7b7e" class="article-share-link">分享到</a>
       
 
       
@@ -270,7 +235,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2016/08/10/CSS-Materials/" data-id="cisstgnnf0000rc2ro0u7t03r" class="article-share-link">Share</a>
+        <a data-url="http://yoursite.com/2016/08/10/CSS-Materials/" data-id="cisstgnnf0000rc2ro0u7t03r" class="article-share-link">分享到</a>
       
 
       
@@ -311,7 +276,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2016/08/02/Job-schedule/" data-id="cisstgnnr0002rc2r3hfzc1dc" class="article-share-link">Share</a>
+        <a data-url="http://yoursite.com/2016/08/02/Job-schedule/" data-id="cisstgnnr0002rc2r3hfzc1dc" class="article-share-link">分享到</a>
       
 
       
@@ -356,7 +321,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2016/08/01/ssh-problems/" data-id="cisstgno70008rc2rbzyglwev" class="article-share-link">Share</a>
+        <a data-url="http://yoursite.com/2016/08/01/ssh-problems/" data-id="cisstgno70008rc2rbzyglwev" class="article-share-link">分享到</a>
       
 
       
@@ -397,7 +362,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2016/08/01/EatMoneyMark/" data-id="cisstgnnn0001rc2rr8acztt7" class="article-share-link">Share</a>
+        <a data-url="http://yoursite.com/2016/08/01/EatMoneyMark/" data-id="cisstgnnn0001rc2rr8acztt7" class="article-share-link">分享到</a>
       
 
       
@@ -447,7 +412,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2016/07/31/hexoToBlog/" data-id="cisstgnnt0003rc2rx1n88r6i" class="article-share-link">Share</a>
+        <a data-url="http://yoursite.com/2016/07/31/hexoToBlog/" data-id="cisstgnnt0003rc2rx1n88r6i" class="article-share-link">分享到</a>
       
 
       
@@ -469,7 +434,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
+    <h3 class="widget-title">分类</h3>
     <div class="widget">
       <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScript/">JavaScript</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ssh-linux/">ssh,linux</a><span class="category-list-count">1</span></li></ul>
     </div>
@@ -478,7 +443,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
+    <h3 class="widget-title">标签</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog-hexo-markdown/">blog,hexo,markdown</a><span class="tag-list-count">1</span></li></ul>
     </div>
@@ -487,7 +452,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
       <a href="/tags/blog-hexo-markdown/" style="font-size: 10px;">blog,hexo,markdown</a>
     </div>
@@ -496,7 +461,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">归档</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a><span class="archive-list-count">1</span></li></ul>
     </div>
@@ -505,7 +470,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">近期文章</h3>
     <div class="widget">
       <ul>
         
@@ -536,7 +501,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Links</h3>
+    <h3 class="widget-title">友情链接</h3>
     <div class="widget">
       <ul>
         
@@ -573,7 +538,7 @@
 </nav>
   <!-- totop start -->
 <div id="totop">
-<a title="totop"><img src="/img/scrollup.png"/></a>
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
 </div>
 
 <!-- totop end -->
