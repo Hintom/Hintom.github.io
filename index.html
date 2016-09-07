@@ -140,15 +140,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>##</p>
-<p>主要参考以下网址：<br><a href="https://help.ubuntu.com/community/SSH/OpenSSH/Keys" target="_blank" rel="external">https://help.ubuntu.com/community/SSH/OpenSSH/Keys</a><br><a href="https://support.suso.com/supki/SSH_Tutorial_for_Linux" target="_blank" rel="external">https://support.suso.com/supki/SSH_Tutorial_for_Linux</a><br><a href="http://blog.chinaunix.net/uid-22556372-id-1773417.html" target="_blank" rel="external">http://blog.chinaunix.net/uid-22556372-id-1773417.html</a></p>
-<h2 id="开启-关闭-password-authentification"><a href="#开启-关闭-password-authentification" class="headerlink" title="开启/关闭 password authentification"></a>开启/关闭 password authentification</h2><p>To disable password authentication, look for the following line in your sshd_config file:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#PasswordAuthentication yes</span></div></pre></td></tr></table></figure>
-<p>replace it with a line that looks like this:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">PasswordAuthentication no</div></pre></td></tr></table></figure>
-<p>Once you have saved the file and restarted your SSH server, you shouldn’t even be asked for a password when you log in.</p>
-<h2 id="root登录提示-密码正确"><a href="#root登录提示-密码正确" class="headerlink" title="root登录提示(密码正确)"></a>root登录提示(密码正确)</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">permission denied</div></pre></td></tr></table></figure>
-<p>修改sshd_config file:PermitRootLogin yes</p>
-<h2 id="公钥认证原理"><a href="#公钥认证原理" class="headerlink" title="公钥认证原理"></a>公钥认证原理</h2>
+<p>主要参考以下网址：<br><a href="https://help.ubuntu.com/community/SSH/OpenSSH/Keys">https://help.ubuntu.com/community/SSH/OpenSSH/Keys</a><br><a href="https://support.suso.com/supki/SSH_Tutorial_for_Linux">https://support.suso.com/supki/SSH_Tutorial_for_Linux</a><br><a href="http://blog.chinaunix.net/uid-22556372-id-1773417.html">http://blog.chinaunix.net/uid-22556372-id-1773417.html</a><br>
+        
+          <p class="article-more-link">
+            <a href="/2016/08/31/ssh-tutorials/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
