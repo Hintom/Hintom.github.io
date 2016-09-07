@@ -4,14 +4,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2016 | Welcome, Guys.</title>
+  <title>ruby,yaml | Welcome, Guys.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Welcome, Guys.">
-<meta property="og:url" content="http://yoursite.com/archives/2016/index.html">
+  <meta name="description" content="rubyattr_accessor123attr_accessor :name 相当于attr_reader :nameattr_writer :name
+那么 name变量既可读也可写class Person  attr_accessor :name
+  def greeting    “Hello #{@name}”  endend
+person = Person.newperson.name">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ruby,yaml">
+<meta property="og:url" content="http://yoursite.com/2016/09/07/ruby-yaml/index.html">
 <meta property="og:site_name" content="Welcome, Guys.">
+<meta property="og:description" content="rubyattr_accessor123attr_accessor :name 相当于attr_reader :nameattr_writer :name
+那么 name变量既可读也可写class Person  attr_accessor :name
+  def greeting    “Hello #{@name}”  endend
+person = Person.newperson.name">
+<meta property="og:updated_time" content="2016-09-07T11:23:08.204Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Welcome, Guys.">
+<meta name="twitter:title" content="ruby,yaml">
+<meta name="twitter:description" content="rubyattr_accessor123attr_accessor :name 相当于attr_reader :nameattr_writer :name
+那么 name变量既可读也可写class Person  attr_accessor :name
+  def greeting    “Hello #{@name}”  endend
+person = Person.newperson.name">
   
     <link rel="alternative" href="/atom.xml" title="Welcome, Guys." type="application/atom+xml">
   
@@ -68,172 +81,63 @@
   </div>
 </header>
     <div class="outer">
-      <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/09/07/ruby-yaml/" class="archive-article-date">
-  <time datetime="2016-09-07T11:22:48.000Z" itemprop="datePublished">Sep 7</time>
+      <section id="main"><article id="post-ruby-yaml" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/09/07/ruby-yaml/" class="article-date">
+  <time datetime="2016-09-07T11:22:48.000Z" itemprop="datePublished">2016-09-07</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/09/07/ruby-yaml/">ruby,yaml</a>
+    <h1 class="article-title" itemprop="name">
+      ruby,yaml
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/08/31/ssh-tutorials/" class="archive-article-date">
-  <time datetime="2016-08-31T12:35:12.000Z" itemprop="datePublished">Aug 31</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/31/ssh-tutorials/">ssh tutorials</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/08/30/js-regular-expression/" class="archive-article-date">
-  <time datetime="2016-08-30T06:49:32.000Z" itemprop="datePublished">Aug 30</time>
-</a>
+        <h2 id="ruby"><a href="#ruby" class="headerlink" title="ruby"></a>ruby</h2><h3 id="attr-accessor"><a href="#attr-accessor" class="headerlink" title="attr_accessor"></a>attr_accessor</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">attr_accessor :name 相当于</div><div class="line">attr_reader :name</div><div class="line">attr_writer :name</div></pre></td></tr></table></figure>
+<p>那么 name变量既可读也可写<br>class Person<br>  attr_accessor :name</p>
+<p>  def greeting<br>    “Hello #{@name}”<br>  end<br>end</p>
+<p>person = Person.new<br>person.name = “Dennis”<br>person.greeting # =&gt; “Hello Dennis”</p>
+<h3 id="范围运算符"><a href="#范围运算符" class="headerlink" title="范围运算符"></a>范围运算符</h3><p>1..10 创建从 1 到 10 的范围<br>1…10 创建从 1 到 9 的范围</p>
+<h2 id="yaml"><a href="#yaml" class="headerlink" title="yaml"></a>yaml</h2><h3 id="YAML-add-domain-type-自定义解析类型"><a href="#YAML-add-domain-type-自定义解析类型" class="headerlink" title="YAML::add_domain_type 自定义解析类型"></a>YAML::add_domain_type 自定义解析类型</h3><p>YAML某Key的Value一般为Array或Hash，但如果需要将Value解析为其它的自定义类型，可以使用该方法。</p>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>注意在YAML中，字串不一定要用双引号标示。另外，在缩排中空白字元的数目并不是非常重要，只要相同阶层的元素左侧对齐就可以了</p>
+<h3 id="yaml-code-online"><a href="#yaml-code-online" class="headerlink" title="yaml code online"></a>yaml code online</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://nodeca.github.io/js-yaml/</div></pre></td></tr></table></figure>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/30/js-regular-expression/">js regular expression</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/08/10/CSS-Materials/" class="archive-article-date">
-  <time datetime="2016-08-10T13:53:21.000Z" itemprop="datePublished">Aug 10</time>
-</a>
+    </div>
+    <footer class="article-footer">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/10/CSS-Materials/">CSS Materials</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/08/02/Job-schedule/" class="archive-article-date">
-  <time datetime="2016-08-02T13:46:04.000Z" itemprop="datePublished">Aug 2</time>
-</a>
+        <a data-url="http://yoursite.com/2016/09/07/ruby-yaml/" data-id="cisstgno50007rc2rpg6pwr08" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/02/Job-schedule/">Job schedule</a>
-    </h1>
-  
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/08/01/ssh-problems/" class="archive-article-date">
-  <time datetime="2016-08-01T10:00:22.000Z" itemprop="datePublished">Aug 1</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/01/ssh-problems/">ssh problems</a>
-    </h1>
-  
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/08/01/EatMoneyMark/" class="archive-article-date">
-  <time datetime="2016-08-01T09:04:44.000Z" itemprop="datePublished">Aug 1</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/01/EatMoneyMark/">EatMoneyMark</a>
-    </h1>
-  
-
-    </header>
+    </footer>
   </div>
-</article>
   
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/07/31/hexoToBlog/" class="archive-article-date">
-  <time datetime="2016-07-31T02:20:29.000Z" itemprop="datePublished">Jul 31</time>
-</a>
-      
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/31/hexoToBlog/">windows Hexo+Github 建立博客</a>
-    </h1>
   
+    <a href="/2016/08/31/ssh-tutorials/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">ssh tutorials</div>
+    </a>
+  
+</nav>
 
-    </header>
-  </div>
+  
 </article>
-  
-  
-    </div></section>
-  
+
 </section>
       
       <aside id="sidebar">
