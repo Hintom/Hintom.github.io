@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Welcome, Guys.">
 <meta property="og:description" content="废了半天劲终于搞定了，下面是一些攻略
 基本步骤安装 github,nodejs,hexo,按照这篇博客来">
-<meta property="og:updated_time" content="2016-07-31T05:35:57.023Z">
+<meta property="og:updated_time" content="2016-09-11T13:31:09.938Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="windows Hexo+Github 建立博客">
 <meta name="twitter:description" content="废了半天劲终于搞定了，下面是一些攻略
@@ -94,6 +94,7 @@
     </h1>
   
 
+        
       </header>
     
     <div class="article-entry" itemprop="articleBody">
@@ -111,6 +112,7 @@
 <p>3.部署到git<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div></pre></td></tr></table></figure></p>
 <p>合并起来简写就是<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d -g</div></pre></td></tr></table></figure></p>
 <h3 id="hexo的编辑"><a href="#hexo的编辑" class="headerlink" title="hexo的编辑"></a>hexo的编辑</h3><p>“## “  二级标题  注意不要漏了空格<br>“### “ 三级标题<br>更多markdown语法请参考<a href="http://ibruce.info/2013/11/26/markdown/" target="_blank" rel="external">markdown语法</a></p>
+<h3 id="添加多说评论-以及评论区的css调整"><a href="#添加多说评论-以及评论区的css调整" class="headerlink" title="添加多说评论 以及评论区的css调整"></a>添加多说评论 以及评论区的css调整</h3><p>参考<a href="http://moxfive.xyz/2016/01/02/hexo-comments/?utm_source=tuicool&amp;utm_medium=referral" target="_blank" rel="external">添加多说评论</a><br><a href="http://moxfive.xyz/2015/09/29/duoshuo-style/" target="_blank" rel="external">评论css调整</a><br><a href="http://bblove.me/2015/05/30/hexo-setting-with-comments-and-visitors/" target="_blank" rel="external">访问量</a></p>
 
       
     </div>
@@ -244,13 +246,15 @@
         
       </div>
       <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2016 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
+	<div class="alignleft">
+	
+	&copy; 2016 John Doe
+	
+	<span id="busuanzi_container_site_pv">
+	<i class="fa fa-flag"></i>    你是第<span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span>个到访的小伙伴
+	</span>
+	</div>
+	<div class="clearfix"></div>
 </footer>
     </div>
     <nav id="mobile-nav">
@@ -270,6 +274,9 @@
 
 
 <script src="/js/script.js"></script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 
   </div>
 </body>
