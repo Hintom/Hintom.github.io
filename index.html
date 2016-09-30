@@ -130,6 +130,170 @@
       <div class="body-wrap">
         
   
+    <article id="post-unix-socket" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/29/unix-socket/">unix socket</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="img-tutorial"><a href="#img-tutorial" class="headerlink" title="img-tutorial"></a>img-tutorial</h2><p><img src="images/interprocess-sock.gif" alt=""></p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/09/29/unix-socket/" class="archive-article-date">
+  	<time datetime="2016-09-29T09:40:02.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-09-29</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-sqlite-command" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/27/sqlite-command/">sqlite command</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>.table</li>
+</ol>
+<p>显示db下所有表</p>
+<ol>
+<li>.schema mytable</li>
+</ol>
+<p>显示mytable下所有key</p>
+<ol>
+<li><p>select * from mytable;</p>
+</li>
+<li><p>.mod line</p>
+</li>
+</ol>
+<p>一行行显示key-value</p>
+<ol>
+<li>.quit</li>
+</ol>
+<p>退出sqlite</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/09/27/sqlite-command/" class="archive-article-date">
+  	<time datetime="2016-09-27T07:22:24.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-09-27</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sqlite/">sqlite</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-cookie-and-session" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/27/cookie-and-session/">cookie and session</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>作者：匿名用户<br>链接：<a href="http://www.zhihu.com/question/19786827/answer/28762190" target="_blank" rel="external">http://www.zhihu.com/question/19786827/answer/28762190</a><br>来源：知乎<br>著作权归作者所有，转载请联系作者获得授权。</p>
+<p>1.因为http是无状态的,每次请求都是 一个独立过程,所以下一次请求无法得知上一次请求产生的一些数据因此产生了cookie,作用是在一次请求介绍后保存一些数据到客户端,客户端在下次请求时携带上这些数据来确定状态；<br>2.session是一般基于cookie的(session id也可以通过url参数进行传递),原理是通过cookie在客户端保存一个唯一身份识别id然后再服务器内存或者数据库中对这个唯一身份进行关联,每次请求过来的时候通过这个id从内存或者数据库中取出相应数据;<br>3,session id在客户端可以通过cookie或者get post 参数,或者url地址的形式进行传递(只要与服务器进行约定方法非常多)默认是通过cookie实现的；在服务器上session可以通过内存,文件,数据库等形式进行保存(java web中默认是存在内存中,django默认是存在数据库中,尚未发现存在文件中的)<br>4.有一点原则就是永远不要相信客户端传过来的数据,必须对传过来的数据进行验证,所以必须用session,至于用数据库还是高速缓存,我觉得应该都可以,数据库可以做集群,第三方缓存框架也可以做集群;最后的决定因素就看成本和复杂度了.</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/09/27/cookie-and-session/" class="archive-article-date">
+  	<time datetime="2016-09-27T05:53:20.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-09-27</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cookie-session/">cookie,session</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-ruby-yaml" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -455,7 +619,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>《————用于记账————》<br>Mon   Tue   Wed   Thu   Fri<br>      7</p>
+        <p>《————用于记账————》<br>Mon   Tue   Wed   Thu   Fri<br> 7     8.3   7</p>
 
       
     </div>
@@ -624,7 +788,7 @@ MathJax.Hub.Queue(function() {
     
     	<section class="tools-section tools-section-tag">
     			<div class="widget tagcloud" id="js-tagcloud">
-    				<a href="/tags/blog-hexo-markdown/" style="font-size: 10px;">blog,hexo,markdown</a>
+    				<a href="/tags/blog-hexo-markdown/" style="font-size: 10px;">blog,hexo,markdown</a> <a href="/tags/cookie-session/" style="font-size: 10px;">cookie,session</a> <a href="/tags/sqlite/" style="font-size: 10px;">sqlite</a>
     			</div>
     	</section>
     

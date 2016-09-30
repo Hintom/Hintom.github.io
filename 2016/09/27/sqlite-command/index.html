@@ -4,27 +4,69 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>ruby,yaml | Welcome, Guys.</title>
+  <title>sqlite command | Welcome, Guys.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="rubyattr_accessor123attr_accessor :name 相当于attr_reader :nameattr_writer :name
-那么 name变量既可读也可写class Person  attr_accessor :name
-  def greeting    “Hello #{@name}”  endend
-person = Person.newperson.name">
+  <meta name="description" content=".table
+
+显示db下所有表
+
+.schema mytable
+
+显示mytable下所有key
+
+select * from mytable;
+
+.mod line
+
+
+一行行显示key-value
+
+.quit
+
+退出sqlite">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ruby,yaml">
-<meta property="og:url" content="http://yoursite.com/2016/09/07/ruby-yaml/index.html">
+<meta property="og:title" content="sqlite command">
+<meta property="og:url" content="http://yoursite.com/2016/09/27/sqlite-command/index.html">
 <meta property="og:site_name" content="Welcome, Guys.">
-<meta property="og:description" content="rubyattr_accessor123attr_accessor :name 相当于attr_reader :nameattr_writer :name
-那么 name变量既可读也可写class Person  attr_accessor :name
-  def greeting    “Hello #{@name}”  endend
-person = Person.newperson.name">
-<meta property="og:updated_time" content="2016-09-11T14:17:09.865Z">
+<meta property="og:description" content=".table
+
+显示db下所有表
+
+.schema mytable
+
+显示mytable下所有key
+
+select * from mytable;
+
+.mod line
+
+
+一行行显示key-value
+
+.quit
+
+退出sqlite">
+<meta property="og:updated_time" content="2016-09-27T07:38:27.382Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ruby,yaml">
-<meta name="twitter:description" content="rubyattr_accessor123attr_accessor :name 相当于attr_reader :nameattr_writer :name
-那么 name变量既可读也可写class Person  attr_accessor :name
-  def greeting    “Hello #{@name}”  endend
-person = Person.newperson.name">
+<meta name="twitter:title" content="sqlite command">
+<meta name="twitter:description" content=".table
+
+显示db下所有表
+
+.schema mytable
+
+显示mytable下所有key
+
+select * from mytable;
+
+.mod line
+
+
+一行行显示key-value
+
+.quit
+
+退出sqlite">
   
     <link rel="alternative" href="/atom.xml" title="Welcome, Guys." type="application/atom+xml">
   
@@ -138,7 +180,7 @@ person = Person.newperson.name">
 </nav>
 
       <div class="body-wrap">
-        <article id="post-ruby-yaml" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-sqlite-command" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -148,7 +190,7 @@ person = Person.newperson.name">
         
   
     <h1 class="article-title" itemprop="name">
-      ruby,yaml
+      sqlite command
     </h1>
   
 
@@ -156,22 +198,39 @@ person = Person.newperson.name">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="ruby"><a href="#ruby" class="headerlink" title="ruby"></a>ruby</h2><h3 id="attr-accessor"><a href="#attr-accessor" class="headerlink" title="attr_accessor"></a>attr_accessor</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">attr_accessor :name 相当于</div><div class="line">attr_reader :name</div><div class="line">attr_writer :name</div></pre></td></tr></table></figure>
-<p>那么 name变量既可读也可写<br>class Person<br>  attr_accessor :name</p>
-<p>  def greeting<br>    “Hello #{@name}”<br>  end<br>end</p>
-<p>person = Person.new<br>person.name = “Dennis”<br>person.greeting # =&gt; “Hello Dennis”</p>
-<h3 id="范围运算符"><a href="#范围运算符" class="headerlink" title="范围运算符"></a>范围运算符</h3><p>1..10 创建从 1 到 10 的范围<br>1…10 创建从 1 到 9 的范围<br><a id="more"></a></p>
-<h2 id="yaml"><a href="#yaml" class="headerlink" title="yaml"></a>yaml</h2><h3 id="YAML-add-domain-type-自定义解析类型"><a href="#YAML-add-domain-type-自定义解析类型" class="headerlink" title="YAML::add_domain_type 自定义解析类型"></a>YAML::add_domain_type 自定义解析类型</h3><p>YAML某Key的Value一般为Array或Hash，但如果需要将Value解析为其它的自定义类型，可以使用该方法。</p>
-<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>注意在YAML中，字串不一定要用双引号标示。另外，在缩排中空白字元的数目并不是非常重要，只要相同阶层的元素左侧对齐就可以了</p>
-<h3 id="yaml-code-online"><a href="#yaml-code-online" class="headerlink" title="yaml code online"></a>yaml code online</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://nodeca.github.io/js-yaml/</div></pre></td></tr></table></figure>
+        <ol>
+<li>.table</li>
+</ol>
+<p>显示db下所有表</p>
+<ol>
+<li>.schema mytable</li>
+</ol>
+<p>显示mytable下所有key</p>
+<ol>
+<li><p>select * from mytable;</p>
+</li>
+<li><p>.mod line</p>
+</li>
+</ol>
+<p>一行行显示key-value</p>
+<ol>
+<li>.quit</li>
+</ol>
+<p>退出sqlite</p>
+
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/09/07/ruby-yaml/" class="archive-article-date">
-  	<time datetime="2016-09-07T11:22:48.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-09-07</time>
+      <a href="/2016/09/27/sqlite-command/" class="archive-article-date">
+  	<time datetime="2016-09-27T07:22:24.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-09-27</time>
 </a>
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sqlite/">sqlite</a></li></ul>
+	</div>
+
       
 
       <div class="clearfix"></div>
@@ -182,18 +241,18 @@ person = Person.newperson.name">
   
 <nav id="article-nav">
   
-    <a href="/2016/09/27/cookie-and-session/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/09/29/unix-socket/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          cookie and session
+          unix socket
         
       </div>
     </a>
   
   
-    <a href="/2016/08/31/ssh-tutorials/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">ssh tutorials</div>
+    <a href="/2016/09/27/cookie-and-session/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">cookie and session</div>
       <i class="icon-circle-right"></i>
     </a>
   

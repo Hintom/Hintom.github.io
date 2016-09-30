@@ -4,27 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>ruby,yaml | Welcome, Guys.</title>
+  <title>cookie and session | Welcome, Guys.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="rubyattr_accessor123attr_accessor :name 相当于attr_reader :nameattr_writer :name
-那么 name变量既可读也可写class Person  attr_accessor :name
-  def greeting    “Hello #{@name}”  endend
-person = Person.newperson.name">
+  <meta name="description" content="作者：匿名用户链接：http://www.zhihu.com/question/19786827/answer/28762190来源：知乎著作权归作者所有，转载请联系作者获得授权。
+1.因为http是无状态的,每次请求都是 一个独立过程,所以下一次请求无法得知上一次请求产生的一些数据因此产生了cookie,作用是在一次请求介绍后保存一些数据到客户端,客户端在下次请求时携带上这些数据来确定状态；2.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ruby,yaml">
-<meta property="og:url" content="http://yoursite.com/2016/09/07/ruby-yaml/index.html">
+<meta property="og:title" content="cookie and session">
+<meta property="og:url" content="http://yoursite.com/2016/09/27/cookie-and-session/index.html">
 <meta property="og:site_name" content="Welcome, Guys.">
-<meta property="og:description" content="rubyattr_accessor123attr_accessor :name 相当于attr_reader :nameattr_writer :name
-那么 name变量既可读也可写class Person  attr_accessor :name
-  def greeting    “Hello #{@name}”  endend
-person = Person.newperson.name">
-<meta property="og:updated_time" content="2016-09-11T14:17:09.865Z">
+<meta property="og:description" content="作者：匿名用户链接：http://www.zhihu.com/question/19786827/answer/28762190来源：知乎著作权归作者所有，转载请联系作者获得授权。
+1.因为http是无状态的,每次请求都是 一个独立过程,所以下一次请求无法得知上一次请求产生的一些数据因此产生了cookie,作用是在一次请求介绍后保存一些数据到客户端,客户端在下次请求时携带上这些数据来确定状态；2.">
+<meta property="og:updated_time" content="2016-09-27T06:06:35.460Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ruby,yaml">
-<meta name="twitter:description" content="rubyattr_accessor123attr_accessor :name 相当于attr_reader :nameattr_writer :name
-那么 name变量既可读也可写class Person  attr_accessor :name
-  def greeting    “Hello #{@name}”  endend
-person = Person.newperson.name">
+<meta name="twitter:title" content="cookie and session">
+<meta name="twitter:description" content="作者：匿名用户链接：http://www.zhihu.com/question/19786827/answer/28762190来源：知乎著作权归作者所有，转载请联系作者获得授权。
+1.因为http是无状态的,每次请求都是 一个独立过程,所以下一次请求无法得知上一次请求产生的一些数据因此产生了cookie,作用是在一次请求介绍后保存一些数据到客户端,客户端在下次请求时携带上这些数据来确定状态；2.">
   
     <link rel="alternative" href="/atom.xml" title="Welcome, Guys." type="application/atom+xml">
   
@@ -138,7 +132,7 @@ person = Person.newperson.name">
 </nav>
 
       <div class="body-wrap">
-        <article id="post-ruby-yaml" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-cookie-and-session" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -148,7 +142,7 @@ person = Person.newperson.name">
         
   
     <h1 class="article-title" itemprop="name">
-      ruby,yaml
+      cookie and session
     </h1>
   
 
@@ -156,22 +150,22 @@ person = Person.newperson.name">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="ruby"><a href="#ruby" class="headerlink" title="ruby"></a>ruby</h2><h3 id="attr-accessor"><a href="#attr-accessor" class="headerlink" title="attr_accessor"></a>attr_accessor</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">attr_accessor :name 相当于</div><div class="line">attr_reader :name</div><div class="line">attr_writer :name</div></pre></td></tr></table></figure>
-<p>那么 name变量既可读也可写<br>class Person<br>  attr_accessor :name</p>
-<p>  def greeting<br>    “Hello #{@name}”<br>  end<br>end</p>
-<p>person = Person.new<br>person.name = “Dennis”<br>person.greeting # =&gt; “Hello Dennis”</p>
-<h3 id="范围运算符"><a href="#范围运算符" class="headerlink" title="范围运算符"></a>范围运算符</h3><p>1..10 创建从 1 到 10 的范围<br>1…10 创建从 1 到 9 的范围<br><a id="more"></a></p>
-<h2 id="yaml"><a href="#yaml" class="headerlink" title="yaml"></a>yaml</h2><h3 id="YAML-add-domain-type-自定义解析类型"><a href="#YAML-add-domain-type-自定义解析类型" class="headerlink" title="YAML::add_domain_type 自定义解析类型"></a>YAML::add_domain_type 自定义解析类型</h3><p>YAML某Key的Value一般为Array或Hash，但如果需要将Value解析为其它的自定义类型，可以使用该方法。</p>
-<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>注意在YAML中，字串不一定要用双引号标示。另外，在缩排中空白字元的数目并不是非常重要，只要相同阶层的元素左侧对齐就可以了</p>
-<h3 id="yaml-code-online"><a href="#yaml-code-online" class="headerlink" title="yaml code online"></a>yaml code online</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://nodeca.github.io/js-yaml/</div></pre></td></tr></table></figure>
+        <p>作者：匿名用户<br>链接：<a href="http://www.zhihu.com/question/19786827/answer/28762190" target="_blank" rel="external">http://www.zhihu.com/question/19786827/answer/28762190</a><br>来源：知乎<br>著作权归作者所有，转载请联系作者获得授权。</p>
+<p>1.因为http是无状态的,每次请求都是 一个独立过程,所以下一次请求无法得知上一次请求产生的一些数据因此产生了cookie,作用是在一次请求介绍后保存一些数据到客户端,客户端在下次请求时携带上这些数据来确定状态；<br>2.session是一般基于cookie的(session id也可以通过url参数进行传递),原理是通过cookie在客户端保存一个唯一身份识别id然后再服务器内存或者数据库中对这个唯一身份进行关联,每次请求过来的时候通过这个id从内存或者数据库中取出相应数据;<br>3,session id在客户端可以通过cookie或者get post 参数,或者url地址的形式进行传递(只要与服务器进行约定方法非常多)默认是通过cookie实现的；在服务器上session可以通过内存,文件,数据库等形式进行保存(java web中默认是存在内存中,django默认是存在数据库中,尚未发现存在文件中的)<br>4.有一点原则就是永远不要相信客户端传过来的数据,必须对传过来的数据进行验证,所以必须用session,至于用数据库还是高速缓存,我觉得应该都可以,数据库可以做集群,第三方缓存框架也可以做集群;最后的决定因素就看成本和复杂度了.</p>
+
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/09/07/ruby-yaml/" class="archive-article-date">
-  	<time datetime="2016-09-07T11:22:48.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-09-07</time>
+      <a href="/2016/09/27/cookie-and-session/" class="archive-article-date">
+  	<time datetime="2016-09-27T05:53:20.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-09-27</time>
 </a>
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cookie-session/">cookie,session</a></li></ul>
+	</div>
+
       
 
       <div class="clearfix"></div>
@@ -182,18 +176,18 @@ person = Person.newperson.name">
   
 <nav id="article-nav">
   
-    <a href="/2016/09/27/cookie-and-session/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/09/27/sqlite-command/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          cookie and session
+          sqlite command
         
       </div>
     </a>
   
   
-    <a href="/2016/08/31/ssh-tutorials/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">ssh tutorials</div>
+    <a href="/2016/09/07/ruby-yaml/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">ruby,yaml</div>
       <i class="icon-circle-right"></i>
     </a>
   
