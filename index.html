@@ -130,6 +130,97 @@
       <div class="body-wrap">
         
   
+    <article id="post-netstat-command" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/10/11/netstat-command/">netstat command</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>-a  列出所有<br>-t/u 列出tcp/udp<br>-l  列出listen的<br>-n  禁用反向域名解析/查看端口<br>-p  查看进程号、进程名<br>-e  查看user</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/10/11/netstat-command/" class="archive-article-date">
+  	<time datetime="2016-10-11T01:44:09.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-11</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-apache-settings" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/10/10/apache-settings/">apache settings</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="httpd-conf"><a href="#httpd-conf" class="headerlink" title="httpd.conf"></a>httpd.conf</h2><h3 id="keep-alive"><a href="#keep-alive" class="headerlink" title="keep alive"></a>keep alive</h3><p>  http请求和tcp请求是什么关系呢？简单点说就是一个tcp请求是比较靠近底层的<br>，在它上面是http之类的应用请求，所以可以认为一个tcp请求包括很多个http请求（至于包括多少，apache中可以设定），同时tcp的链接与断开比http请求的链接和断开更需要消耗掉更多的内存资源和时间.<br>  KeepAlive配置的含义：对于HTTP/1.1的客户端来说，将会尽量的保持客户的HTTP连<br>接，通过一个连接传送多份HTTP请求响应。这样对于客户端来说，可以提高50%左右的响应时间，而于服务器端来说则降低了更多个连接的开销。不过这个依赖于客户端是否想保持连接。IE默认是保持连接的，当你打开100个图片的网站时，IE有可能只打开2个连接，通过这两个连接传送数据，而不是开100个连接<br> KeepAliveTimeout 为持久连接保持的时间，也就是说，在这此连接结束后开始计时<br>，多长时间内没有重新发送HTTP请求，就断掉连接。默认设置为5秒，这个值可以大点，但不能太大，否则会出现同时等候过多连接，导致多的内存被占用.<br>  打开 KeepAlive<br>后，意味着每次用户完成全部访问后，都要保持一定时间后才关闭会关闭 TCP 连接，那么在关闭连接之前，必然会有一个Apache 进程对应于该用户而不能处理其他用户，假设 KeepAlive 的超时时间为 10 秒种，服务器每秒处理 50个独立用户访问，那么系统中 Apache 的总进程数就是 10 * 50 ＝ 500 个，如果一个进程占用 4M 内存，那么总共会消耗 2G内存，所以可以看出，在这种配置中，相当消耗内存，但好处是系统只处理了 50次 TCP 的握手和关闭操作。</p>
+<p>　　如果关闭 KeepAlive，如果还是每秒50个用户访问，如果用户每次连续的请求数为3个，那么 Apache 的总进程数就是 50 * 3= 150 个，如果还是每个进程占用 4M 内存，那么总的内存消耗为 600M，这种配置能节省大量内存，但是，系统处理了 150 次 TCP的握手和关闭的操作，因此又会多消耗一些 CPU 资源。</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/10/10/apache-settings/" class="archive-article-date">
+  	<time datetime="2016-10-10T09:09:41.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-10</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-unix-socket" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -524,7 +615,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>8-2<br>For the last week,<br>fix bug:some log is not in the right order when the logs are sorted by message<br>UI modify: when input invalid text. just change the color of label<br>fix bug: alert pops when edit waf signature.<br>fix bug: edit offloading  wrong alert pops when enable loadbalancing  and auto scheme select at the same time</p>
+        <p>10-10</p>
+<p>Add A rule to protect the number of voyager card(which is a kind of credit card), that is to mask part of the number the server pushs.</p>
+<p>fix bug : failed to download scheduled tsr or generated Tsr on restart.</p>
+<p>Add syslog sever port on log/settings page.<br>This is merged from sslvpn. and test works well on our waf.</p>
+<p>change some css to make the ui looks normal when the login page requires to  change the password</p>
 
       
     </div>
@@ -619,7 +714,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>《————用于记账————》<br>Mon   Tue   Wed   Thu   Fri<br> 7     8.3   7</p>
+        <p>《————用于记账————》<br>    Mon   Tue   Wed   Thu   Fri<br>7    8.3</p>
 
       
     </div>
